@@ -1,24 +1,27 @@
-# Django Pickled Model
+=====================
+Django Pickled Model
+=====================
 
-Django pickled model provides you a model with dynamic data types. a field can store any value in any type.
+Django pickled model provides you a model with dynamic data types.
+a field can store any value in any type.
 
-You can store Integer, Boolean, String and any other data type just using a single field. so there is no need to define extra fields and make your
-model dirty.
+You can store Integer, Boolean, String and any other data type just using a single field.
+so there is no need to define extra fields and make your model dirty.
 
 
 Quick start
 -----------
 
-1. Add "pickles" to your INSTALLED_APPS setting like this:
+1. Add "pickles" to your INSTALLED_APPS setting like this::
 
-   INSTALLED_APPS = [
-   ...
-   'pickles',
-   ]
+    INSTALLED_APPS = [
+        ...
+        'pickles',
+    ]
 
-2. Include the pickles URLconf in your project urls.py like this:
+2. Include the pickles URLconf in your project urls.py like this::
 
-   path('pickles/', include('pickles.api.urls')),
+    path('pickles/', include('pickles.api.urls')),
 
 3. Run ``python manage.py migrate`` to create the polls models.
 
@@ -29,7 +32,8 @@ Quick start
 
 How it works
 ------------
-Admin panel is where you can create your objects. currently supported data types are:
+Admin panel is where you can create your objects.
+currently supported data types are:
 
 - STRING
 - INTEGER
@@ -54,6 +58,7 @@ value is the field that you can enter any data based on the **value data type** 
 - for **LIST** the value will be like: [1,2,3]
 - for **DICTIONARY** the value will be like: {"key": "value"}
 - for **BOOLEAN** the value will be like: True
+
 
 **value data type**
 
