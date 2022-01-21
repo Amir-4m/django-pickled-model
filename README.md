@@ -9,7 +9,12 @@ model dirty.
 Quick start
 -----------
 
-1. Add "pickles" to your INSTALLED_APPS setting like this:
+1. Install django pickled model:
+   
+    `pip install django-pickled-model`
+
+
+2. Add "pickles" to your INSTALLED_APPS setting like this:
 
    INSTALLED_APPS = [
    ...
